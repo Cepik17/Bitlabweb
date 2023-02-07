@@ -1,0 +1,34 @@
+.container{
+	display: flex;
+	margin: auto;
+	width: 90%;
+}
+.center{
+	text-align: center;
+}
+.align{
+	text-align: left;
+}
+
+.news {
+	padding: 0px 40px;
+}
+.hat {
+	color: white;
+	background: darkblue;
+	display: flex; 
+	padding: 10px; 
+	width: 90%; 
+	margin: auto;
+}
+.table{
+	margin: auto;
+}
+<style>
+table{width: 100%;}
+			tr:first-child{font-weight: bold; background: black; color: white;}
+			tr:nth-child(2){background: darkgreen; color: white}
+			tr:nth-child(n + 3):nth-child(-n + 5){background: lightgreen;}
+			tr:nth-child(n + 6):nth-child(-n + 18){background: rgb(229, 240, 229);}
+			tr:nth-child(n + 19):nth-child(-n + 21){background: pink;}
+</style>
