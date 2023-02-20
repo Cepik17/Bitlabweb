@@ -1,0 +1,148 @@
+
+<html>
+
+<body>
+    <script>
+        //TASK 7-1
+        // let arr = new Array();
+        // let n = parseInt(prompt("dlina:"))  
+        // for (let i =0; i < n; i++){
+        //     arr.push(parseInt(prompt()))
+        // }
+        // let m = parseInt(prompt("m:"))  
+        // let index = arr.indexOf(m)
+        // if (index >= 0){
+        //     alert(`Yes ${index}`)
+        // } else {
+        //     alert("NO");
+        // }
+        
+        // TASK 7-2
+        // let arr = new Array();
+        // let input=1
+        // while (input !=0){
+        //     input=(parseInt(prompt()))
+        //     if (input !== 0) {
+        //         arr.push(input);
+        //     }
+        // }
+        // console.log(arr)
+        // let multipl=1
+        // for(let i=0; i<arr.length; i++){
+        //     multipl*=arr[i]
+        // }
+        // let geom = multipl**(1/arr.length)
+        // alert (geom)
+
+        //TASK 7-3
+        // let arr = new Array();
+        // let input=1
+        // while (input !=0){
+        //     input=(parseInt(prompt()))
+        //     if (input !== 0) {
+        //         arr.push(input);
+        //     }
+        // }
+        // let arr2 = ""
+        // for(let i=0; i<arr.length; i++){
+        //     if (arr[i]>0){
+        //         arr2 = arr2 + arr[i] + " "
+        //     }
+        // }
+        // alert (arr2)
+        
+        // TASK 7-4
+        // let arr = new Array();
+        // let n = parseInt(prompt("dlina:"))  
+        // for (let i =0; i < n; i++){
+        //     arr.push(parseInt(prompt()))
+        // }
+        // let multipl=1
+        // for(let i=0; i<arr.length; i++){
+        //     if (arr[i]!=0){
+        //     multipl*=arr[i]
+        //     }
+        // }
+        // alert (multipl)
+
+        //TAKS 7-5
+       
+        // let cars = [
+        //   { name: "Toyota", year: 2018, engineVolume: 3.5, price: "11000000 KZT" },
+        //   { name: "BMW", year: 2022, engineVolume: 3.0, price: "90000000 KZT"},
+        //   { name: "Lexus", year: 2020, engineVolume: 4.0, price: "70000000 KZT" },
+        //   { name: "Mers", year: 2020, engineVolume: 3.0, price: "52000000 KZT" },
+        //   { name: "Mers", year: 2022, engineVolume: 2.0, price: "20000000 KZT" },
+        //   { name: "BMW", year: 2019, engineVolume: 4.4, price: "38000000 KZT"},
+        // ]
+        // while (true){
+        //   alert("INSERT [1] TO SEARCH BY NAME \n INSERT [2] TO SEARCH BY YEAR \n INSERT [3] TO SEARCH BY ENGINE VOLUME \n INSERT [4] TO SEARCH BY PRICE \n INSERT [5] TO EXIT")
+        //   let input = parseInt(prompt())
+        //   let arr = []
+        //   let arr2 = ""
+        //   if (input == 1) {
+        //       let name = prompt("INSERT NAME OF CAR:")
+        //       for (let i =0; i<cars.length; i++){
+        //         if (cars[i].name == name){
+        //             arr.push(cars[i])
+        //           }    
+        //         }
+        //   // let text = ""
+        //   // for(let i=0;i<arr.length;i++){
+        //   //     text+=arr[i].name + " - " + arr[i].year+ " - " + arr[i].engineVolume +" liters - " + arr[i].price + " KZT \n"  
+        //   // }
+        //   // alert(text)
+        //   if (arr.length > 0) {
+        //         console.log(arr)
+        //       } else {
+        //         console.log("No cars found")
+        //       } 
+        //   } else if (input ==2){
+        //     let year1 = prompt("INSERT YEAR START FROM:")
+        //     let year2 = prompt("INSERT YEAR ENDS FROM:")
+        //     let cars2 = cars.filter ((car) => car.year >= year1 && car.year <= year2)
+        //     console.log(cars2)
+        //   }
+        //   else if (input ==3){
+        //     let vol1 = prompt("INSERT ENGINE VOLUME START FROM:")
+        //     let vol2 = prompt("INSERT ENGINE VOLUME ENDS FROM:")
+        //     let cars2 = cars.filter ((car) => car.engineVolume >= vol1 && car.engineVolume <= vol2)
+        //     console.log(cars2)
+        //   }else if (input ==4){
+        //     let price1 = prompt("INSERT ENGINE VOLUME START FROM:")
+        //     let price2 = prompt("INSERT ENGINE VOLUME ENDS FROM:")
+        //     let cars2 = cars.filter ((car) => car.price >= price1 && car.price <= price2)
+        //     console.log(cars2)
+        //   } else if (input == 5){
+        //     break
+        //   }
+        // }
+        //
+        // TASK 7-6
+        let students = []
+        while (true){
+        let input = parseInt(prompt("PRESS 1 TO ADD STUDENT \n  PRESS 2 TO LIST STUDENT \n PRESS 0 TO EXIT"))
+        if (input == 1){
+          let newStudent = {}; 
+          let name = prompt("INSERT NAME: ")
+          newStudent.name = name; 
+          let surname = prompt("INSERT SURNAME: ")
+          newStudent.surname = surname; 
+          let gpa = prompt("INSERT GPA: ")
+          newStudent.gpa = gpa
+          students.push(newStudent);             
+        } else if (input == 2){
+              let text = ""
+              for(let i=0;i<students.length;i++){
+                  text+="Name: " + students[i].name + " - Family: " + students[i].surname+ " - GPA: " + students[i].gpa + "\n"  
+              }
+          alert(text)
+        } else if (input == 0){
+              break
+        }
+      }
+
+
+    </script>    
+</body>
+</html>

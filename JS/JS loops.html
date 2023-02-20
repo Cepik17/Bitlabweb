@@ -1,0 +1,99 @@
+<html>
+    <body>
+        <script>
+            //TASK 1
+            // let arr = new Array();
+            // let n = parseInt(prompt("dlina:"))  
+            // for (let i =0; i < n; i++){
+            //     arr.push(parseInt(prompt()))
+            // }
+            // let array2 = ""
+            // for (let i =n-1; i >= 0; i--){
+            //     array2 = array2 + arr[i] + " "
+            // }
+            // alert (array2)
+
+            // TASK 2
+            // let arr = new Array();
+            // let n = parseInt(prompt("dlina:"))  
+            // for (let i =0; i < n; i++){
+            //     arr.push(parseInt(prompt()))
+            // }
+            // let max = arr[0]
+            // for (let i =0; i < n; i++){
+            //     if (arr[i] > max){
+            //         max = arr[i]
+            //     }
+            // }
+            // alert (max)
+
+            // TASK 3
+            // let arr = new Array();
+            // let n = parseInt(prompt("dlina:"))  
+            // for (let i =0; i < n; i++){
+            //     arr.push(parseInt(prompt()))
+            // }
+            // let count =0;
+            // for (let i = 0; i < n; i++){
+            //     count = count + arr[i]
+            // }
+            // alert (count + " " + count/n)
+
+            //TASK4
+            // let arr = new Array();
+            // let n = parseInt(prompt("dlina:"))  
+            // for (let i =0; i < n; i++){
+            //     arr.push(parseInt(prompt()))
+            // }
+            // let arr2 = ""
+            // for (let i =0; i < n; i++){
+            //     arr2 = arr2 + arr[i]*arr[i] + " "
+            // }
+            // alert(arr2)
+
+            // TASK 5
+            // let users = [
+            //     {login:"ilyas", password: "qwerty"},
+            //     {login:"eldar", password: "qqqqq"},
+            //     {login:"assylkhan", password: "qweqwe"},
+            //     {login:"anel", password: "asdasd"},
+            //     {login:"alibek", password: "aaaaaa"}
+            // ]
+            // let log = prompt("login:")
+            // let pwd = prompt("password")
+            // let userCanEnter = false
+            // for (let i =0; i < users.length; i++){
+            //     if (log == users[i].login && pwd == users[i].password){
+            //         userCanEnter=true
+            //         alert("Welcome, you are authenticated")
+            //         break
+            //     }
+            // }
+            // if (userCanEnter == false){
+            //     alert("User not found")
+            // }
+         
+            // TASK 6
+            let books = [
+                {Name:"Hobbit", author: "Tolkien", ISBN: "12345", price:"50$"},
+                {Name:"The Lord of the rings", author: "Tolkien", ISBN: "45698", price:"60$"},
+                {Name:"Harry Potter", author: "Rowling", ISBN: "98745", price:"40$"},
+                {Name:"Game of Thrones", author: "Martin", ISBN: "02356", price:"50$"},
+                {Name:"Dragons dance", author: "Martin", ISBN: "01478", price:"50$"}
+            ]
+            let arr2 = ""    
+            let input = prompt("Author:")
+            for (var i = 0; i < books.length; i++) {
+                if (input == books[i].author) {
+                    arr2 = arr2 + books[i].Name + " " + books[i].author + " " + books[i].ISBN + " " + books[i].price + " "
+
+                }
+            }
+            alert(arr2)
+
+
+
+
+        </script>
+    </body>
+</html>
