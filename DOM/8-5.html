@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-5</title>
+</head>
+<style>
+    .thumbnail{
+        margin: 10px;
+        padding: 5px;
+    }
+    .cells{
+        display: flex;  
+        justify-content: center;
+        margin: 5px;
+        padding: 10px
+    }
+</style>
+<body>
+    <div class="cells">
+        <img src="https://fastly.picsum.photos/id/41/1280/805.jpg?hmac=W9CWeYdlZisqEfhjuODl83T3lCXAqjUZrOe9iMFPYmI" width="1200px" height="800px" id="mainphoto">
+    </div>
+    <div class="cells">
+        <img class ="thumbnail" src="https://fastly.picsum.photos/id/41/1280/805.jpg?hmac=W9CWeYdlZisqEfhjuODl83T3lCXAqjUZrOe9iMFPYmI" onclick ="increase(0)"   width="140px" height="100px">
+        <img class ="thumbnail" src="https://fastly.picsum.photos/id/65/4912/3264.jpg?hmac=uq0IxYtPIqRKinGruj45KcPPzxDjQvErcxyS1tn7bG0" onclick ="increase(1)"  width="140px" height="100px">
+        <img class ="thumbnail" src="https://fastly.picsum.photos/id/103/2592/1936.jpg?hmac=aC1FT3vX9bCVMIT-KXjHLhP6vImAcsyGCH49vVkAjPQ" onclick ="increase(2)" width="140px" height="100px">
+        <img class ="thumbnail" src="https://fastly.picsum.photos/id/182/2896/1944.jpg?hmac=lzw4TC7qF2R3BEJu05d0M6rdglY57ugjugCP6XoiMbQ" onclick ="increase(3)" width="140px" height="100px">
+        <img class ="thumbnail" src="https://fastly.picsum.photos/id/189/2048/1536.jpg?hmac=R5GGFRgevRAOGu_pBXx0u2hhkhT30ICuSMIAisvauIo" onclick ="increase(4)" width="140px" height="100px">
+    </div>
+    <script>
+        let photos = [
+        "https://fastly.picsum.photos/id/41/1280/805.jpg?hmac=W9CWeYdlZisqEfhjuODl83T3lCXAqjUZrOe9iMFPYmI",
+        "https://fastly.picsum.photos/id/65/4912/3264.jpg?hmac=uq0IxYtPIqRKinGruj45KcPPzxDjQvErcxyS1tn7bG0",
+        "https://fastly.picsum.photos/id/103/2592/1936.jpg?hmac=aC1FT3vX9bCVMIT-KXjHLhP6vImAcsyGCH49vVkAjPQ",
+        "https://fastly.picsum.photos/id/182/2896/1944.jpg?hmac=lzw4TC7qF2R3BEJu05d0M6rdglY57ugjugCP6XoiMbQ",
+        "https://fastly.picsum.photos/id/189/2048/1536.jpg?hmac=R5GGFRgevRAOGu_pBXx0u2hhkhT30ICuSMIAisvauIo",
+        ]
+       
+        function increase(index){
+                mainphoto.src = photos[index]
+        }
+        
+    </script>
+
+    
+</body>
+</html>

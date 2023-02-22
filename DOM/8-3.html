@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta n-ame="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-3</title>
+</head>
+<body>
+    <style>
+        .nomer{
+            width: 45%;
+            padding-right: 10px;
+            
+        }
+        .cells{
+            display: flex;
+            padding: 5px;
+            width: 30%;
+            margin-top: 20px;
+        }
+    </style>
+
+    <div class= "cells">
+        <div style="width:30%">CARD:</div>
+        <div style="display: flex; width:50%; ">
+            <div><input class ="nomer" type ="text" id="card1" ></div>
+            <div><input class ="nomer" type ="text" id="card2"></div>
+            <div><input class ="nomer" type ="text" id="card3"></div>
+            <div><input class ="nomer" type ="text" id="card4"></div>
+        </div>
+    </div>
+    <div class= "cells">
+        <div style="width:30%">NAME SURNAME:</div>
+        <div><input type ="text" id = "name"></div>     
+    </div>
+    <div class= "cells">
+        <div style="width:30%">CVV:</div>
+        <div style="display: flex; width:50%; "><input style="width: 45px;"type ="password" id="cvv"></div>     
+    </div>
+    <div><button type="button" onclick="check()" style="color:white; background-color: blue; padding: 5px;">COMPLETE</button></div>
+   
+   <script>
+        let users = [
+            {name:"Vasya", Surname:"Pupkin",  card1:"0000",card2:"0000",card3:"0000",card4:"0001", cvv: "001"},
+            {name:"Serik", Surname:"Berikov", card1:"1234",card2:"0000",card3:"0000",card4:"0000", cvv: "101"},
+            {name:"John", Surname:"Doe",      card1:"1234",card2:"1234",card3:"1234",card4:"1234", cvv: "111"},
+        ]
+        let flag = false
+        function check(){
+            for (let user of users){   
+                if (card1.value == user.card1 && card2.value==user.card2 && card3.value == user.card3 && card4.value == user.card4 && cvv.value==user.cvv){
+                    alert ("Transaction completed")
+                    flag = true
+                    break
+                }
+            } 
+            if (!flag){
+                alert ("Invalid Data")
+            }
+        }
+    </script>
+</body>
+</html>
