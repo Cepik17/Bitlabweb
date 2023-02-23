@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        .invalid{
+            border-color: red;
+        }
+        .knopka{
+            background-color: blue;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+<body>
+<div id="myform" style="width: 25%;">
+    <div style="display: flex; padding: 10px;">
+        <div width="30%">LOGIN</div>
+        <div style="margin-left:auto;"><input type="text" id="login"></div>
+    </div>
+    <div style="display: flex; padding: 10px; ">
+        <div>PASSWORD</div>
+        <div style="margin-left:auto;"><input Stype="password" id="password"></div>
+    </div>
+    <div style="display: flex; padding: 10px;">
+        <div></div>
+        <div style="margin-left:auto;">
+            <button type="button" class="knopka" onclick="checkUser()">SIGN IN</button>
+        </div>
+    </div>
+</div>
+    <script>
+        let users =[
+            {login: "Ilyas", password: "qwerty"},
+            {login: "Serik", password: "123456"},
+            {login: "Rayan", password: "asdfgh"},
+        ]     
+        
+        function checkUser(){
+            let foundUser =false    
+            for (let i = 0; i < users.length; i++) {
+                if (users[i].login == login.value && users[i].password == password.value) {
+                    document.body.innerHTML = "You are authenticated"
+                    foundUser = true
+                    break
+                } 
+            }
+            if (!foundUser){
+                document.getElementById('password').classList.add('invalid')
+                document.getElementById('login').classList.add('invalid')
+            }
+        }    
+    </script>
+</body>
+</html>

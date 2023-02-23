@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-2</title>
+</head>
+<style>
+    .knopka{
+        background-color: blue;
+        color:white;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 70px;
+    }
+</style>
+<body>
+    <div style="display: flex; justify-content: space-between; width: 10%;">
+        <div><p><button type="button" class ="knopka" onclick="add()">+</button></p></div>
+        <p id="num" style="color: blue;">0</p>
+        <div><p><button type="button" class ="knopka" onclick="minus()">-</button></p></div>
+    </div>
+    <script>
+        function add(){
+            num.innerHTML= parseInt(num.innerHTML) + 1
+        }
+        function minus(){
+            num.innerHTML= parseInt(num.innerHTML) - 1
+        }
+    </script>
+</body>
+</html>
