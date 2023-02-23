@@ -10,12 +10,14 @@
     .thumbnail{
         margin: 10px;
         padding: 5px;
+        width: 140px;
+        height: 100px;
     }
     .cells{
         display: flex;  
         justify-content: center;
         margin: 5px;
-        padding: 10px
+        padding: 10px;
     }
 </style>
 <body>
@@ -23,11 +25,11 @@
         <img src="https://fastly.picsum.photos/id/41/1280/805.jpg?hmac=W9CWeYdlZisqEfhjuODl83T3lCXAqjUZrOe9iMFPYmI" width="1200px" height="800px" id="mainphoto">
     </div>
     <div class="cells">
-        <img class ="thumbnail" src="https://fastly.picsum.photos/id/41/1280/805.jpg?hmac=W9CWeYdlZisqEfhjuODl83T3lCXAqjUZrOe9iMFPYmI" onclick ="increase(0)"   width="140px" height="100px">
-        <img class ="thumbnail" src="https://fastly.picsum.photos/id/65/4912/3264.jpg?hmac=uq0IxYtPIqRKinGruj45KcPPzxDjQvErcxyS1tn7bG0" onclick ="increase(1)"  width="140px" height="100px">
-        <img class ="thumbnail" src="https://fastly.picsum.photos/id/103/2592/1936.jpg?hmac=aC1FT3vX9bCVMIT-KXjHLhP6vImAcsyGCH49vVkAjPQ" onclick ="increase(2)" width="140px" height="100px">
-        <img class ="thumbnail" src="https://fastly.picsum.photos/id/182/2896/1944.jpg?hmac=lzw4TC7qF2R3BEJu05d0M6rdglY57ugjugCP6XoiMbQ" onclick ="increase(3)" width="140px" height="100px">
-        <img class ="thumbnail" src="https://fastly.picsum.photos/id/189/2048/1536.jpg?hmac=R5GGFRgevRAOGu_pBXx0u2hhkhT30ICuSMIAisvauIo" onclick ="increase(4)" width="140px" height="100px">
+        <img class ="thumbnail" src="https://fastly.picsum.photos/id/41/1280/805.jpg?hmac=W9CWeYdlZisqEfhjuODl83T3lCXAqjUZrOe9iMFPYmI" onclick ="increase(0)">
+        <img class ="thumbnail" src="https://fastly.picsum.photos/id/65/4912/3264.jpg?hmac=uq0IxYtPIqRKinGruj45KcPPzxDjQvErcxyS1tn7bG0" onclick ="increase(1)">
+        <img class ="thumbnail" src="https://fastly.picsum.photos/id/103/2592/1936.jpg?hmac=aC1FT3vX9bCVMIT-KXjHLhP6vImAcsyGCH49vVkAjPQ" onclick ="increase(2)">
+        <img class ="thumbnail" src="https://fastly.picsum.photos/id/182/2896/1944.jpg?hmac=lzw4TC7qF2R3BEJu05d0M6rdglY57ugjugCP6XoiMbQ" onclick ="increase(3)">
+        <img class ="thumbnail" src="https://fastly.picsum.photos/id/189/2048/1536.jpg?hmac=R5GGFRgevRAOGu_pBXx0u2hhkhT30ICuSMIAisvauIo" onclick ="increase(4)">
     </div>
     <script>
         let photos = [
