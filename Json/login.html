@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>LOGIN</title>
+</head>
+<body>
+    <div id="hat">
+        <div style="display: flex; background: darkcyan;padding: 10px; margin: auto;">
+		    <div style="color:white;"><b>TWITTER</b></div>
+		    <div style="color:white; padding-left: 75%;">TWEETS</div>
+		    <div style="color:white; padding-left: 2%;">LOGIN</div>
+		    <div style="color:white; padding-left: 2%;"><a href="main.html">REGISTER</a></div>
+	    </div>
+    </div>
+    <div id ="hat2" class="hidden">
+        <div style="display: flex; background: darkcyan;padding: 10px; margin: auto;">
+		    <div style="color:white;"><b>TWITTER</b></div>
+		    <div style="color:white; padding-left: 75%;">TWEETS</div>
+		    <div style="color:white; padding-left: 2%;" id ="login-hat">LOGIN</div>
+		    <div style="color:white; padding-left: 2%;"><a href="login.html">Logout</a></div>
+	    </div>
+    </div>
+    <div id = "login-form" style ="margin: auto; width: 200px">
+        <p>EMAIL:</p>
+        <input type="email" id="email2">
+        <p>PASSWORD:</p>
+        <input type="password" id ="password2">
+        <p><button type="button" onclick="loginlogin()" class="knopka">SIGN IN</button></p>
+    </div>
+    <div id ="profile" class="hidden">
+        <div style="display: flex"><p>Welcome &nbsp</p><p id="fullname2"></p></div>
+        <div>
+            EMAIL:
+            <p id="email3"></p>
+            FULL NAME:
+            <p id="fullname3"></p>
+            COUNTRY:
+            <p id="country3"></p>
+            BIRTHDATE:
+            <p id="birthdate3"></p>
+        </div>
+    </div>
+</body>
+</html>
+
